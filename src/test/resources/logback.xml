@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+   
+      
+
+ 
+    <!-- 日志输出级别 -->
+    <root level="DEBUG">   
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE-debug" />   
+        <appender-ref ref="FILE-error" />   
+        <appender-ref ref="FILE-info" />   
+    </root> 
+</configuration>
