@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.audit.spi;
+package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
-import com.github.inspektr.audit.spi.AuditResourceResolver;
-import org.jasig.cas.util.AopUtils;
+
+import com.tianjunwei.org.jasig.cas.util.AopUtils;
 
 /**
  * Converts the Credential object into a String resource identifier.

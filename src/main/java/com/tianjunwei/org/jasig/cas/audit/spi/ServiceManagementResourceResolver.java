@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.audit.spi;
+package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import com.github.inspektr.audit.spi.AuditResourceResolver;
 import org.aspectj.lang.JoinPoint;
