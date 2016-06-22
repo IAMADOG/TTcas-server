@@ -16,16 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas;
+package com.tianjunwei.org.jasig.cas;
 
 import java.util.List;
 
-import org.jasig.cas.authentication.AuthenticationException;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.logout.LogoutRequest;
-import org.jasig.cas.ticket.TicketException;
-import org.jasig.cas.validation.Assertion;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.logout.LogoutRequest;
+import com.tianjunwei.org.jasig.cas.ticket.TicketException;
+import com.tianjunwei.org.jasig.cas.validation.Assertion;
 
 /**
  * CAS viewed as a set of services to generate and validate Tickets.

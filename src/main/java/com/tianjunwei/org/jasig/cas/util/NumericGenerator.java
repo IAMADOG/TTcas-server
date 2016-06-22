@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.util;
+package com.tianjunwei.org.jasig.cas.util;
 
 /**
  * Interface to return a new sequential number for each call.

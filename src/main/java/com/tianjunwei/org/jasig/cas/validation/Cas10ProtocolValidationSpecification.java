@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.validation;
+package com.tianjunwei.org.jasig.cas.validation;
 
 /**
  * Validation specification for the CAS 1.0 protocol. This specification checks

@@ -16,12 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.web.support;
+package com.tianjunwei.org.jasig.cas.web.support;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.jasig.cas.authentication.principal.SimpleWebApplicationServiceImpl;
-import org.jasig.cas.authentication.principal.WebApplicationService;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SimpleWebApplicationServiceImpl;
+import com.tianjunwei.org.jasig.cas.authentication.principal.WebApplicationService;
 
 /**
  * Implements the traditional CAS2 protocol.

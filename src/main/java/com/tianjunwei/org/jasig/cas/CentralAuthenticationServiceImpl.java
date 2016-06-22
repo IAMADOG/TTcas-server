@@ -16,56 +16,56 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas;
+package com.tianjunwei.org.jasig.cas;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+
 import javax.validation.constraints.NotNull;
 
-import com.github.inspektr.audit.annotation.Audit;
-import org.apache.commons.lang.StringUtils;
-import org.jasig.cas.authentication.AcceptAnyAuthenticationPolicyFactory;
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.AuthenticationBuilder;
-import org.jasig.cas.authentication.AuthenticationException;
-import org.jasig.cas.authentication.AuthenticationManager;
-import org.jasig.cas.authentication.ContextualAuthenticationPolicy;
-import org.jasig.cas.authentication.ContextualAuthenticationPolicyFactory;
-import org.jasig.cas.authentication.MixedPrincipalException;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.principal.PersistentIdGenerator;
-import org.jasig.cas.authentication.principal.Principal;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.authentication.principal.ShibbolethCompatiblePersistentIdGenerator;
-import org.jasig.cas.authentication.principal.SimplePrincipal;
-import org.jasig.cas.logout.LogoutManager;
-import org.jasig.cas.logout.LogoutRequest;
-import org.jasig.cas.services.RegisteredService;
-import org.jasig.cas.services.RegisteredServiceAttributeFilter;
-import org.jasig.cas.services.ServiceContext;
-import org.jasig.cas.services.ServicesManager;
-import org.jasig.cas.services.UnauthorizedProxyingException;
-import org.jasig.cas.services.UnauthorizedServiceException;
-import org.jasig.cas.services.UnauthorizedSsoServiceException;
-import org.jasig.cas.services.support.RegisteredServiceDefaultAttributeFilter;
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.InvalidTicketException;
-import org.jasig.cas.ticket.ServiceTicket;
-import org.jasig.cas.ticket.TicketException;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.ticket.TicketGrantingTicketImpl;
-import org.jasig.cas.ticket.TicketValidationException;
-import org.jasig.cas.ticket.UnsatisfiedAuthenticationPolicyException;
-import org.jasig.cas.ticket.registry.TicketRegistry;
-import org.jasig.cas.util.UniqueTicketIdGenerator;
-import org.jasig.cas.validation.Assertion;
-import org.jasig.cas.validation.ImmutableAssertion;
-import org.perf4j.aop.Profiled;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.AcceptAnyAuthenticationPolicyFactory;
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationBuilder;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationManager;
+import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicy;
+import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicyFactory;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.MixedPrincipalException;
+import com.tianjunwei.org.jasig.cas.authentication.principal.PersistentIdGenerator;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.authentication.principal.ShibbolethCompatiblePersistentIdGenerator;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SimplePrincipal;
+import com.tianjunwei.org.jasig.cas.logout.LogoutManager;
+import com.tianjunwei.org.jasig.cas.logout.LogoutRequest;
+import com.tianjunwei.org.jasig.cas.services.RegisteredService;
+import com.tianjunwei.org.jasig.cas.services.RegisteredServiceAttributeFilter;
+import com.tianjunwei.org.jasig.cas.services.ServiceContext;
+import com.tianjunwei.org.jasig.cas.services.ServicesManager;
+import com.tianjunwei.org.jasig.cas.services.UnauthorizedProxyingException;
+import com.tianjunwei.org.jasig.cas.services.UnauthorizedServiceException;
+import com.tianjunwei.org.jasig.cas.services.UnauthorizedSsoServiceException;
+import com.tianjunwei.org.jasig.cas.services.support.RegisteredServiceDefaultAttributeFilter;
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.InvalidTicketException;
+import com.tianjunwei.org.jasig.cas.ticket.ServiceTicket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketException;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicketImpl;
+import com.tianjunwei.org.jasig.cas.ticket.TicketValidationException;
+import com.tianjunwei.org.jasig.cas.ticket.UnsatisfiedAuthenticationPolicyException;
+import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
+import com.tianjunwei.org.jasig.cas.util.UniqueTicketIdGenerator;
+import com.tianjunwei.org.jasig.cas.validation.Assertion;
+import com.tianjunwei.org.jasig.cas.validation.ImmutableAssertion;
 
 /**
  * Concrete implementation of a CentralAuthenticationService, and also the

@@ -16,12 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.validation;
+package com.tianjunwei.org.jasig.cas.validation;
 
 import java.util.List;
 
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 
 /**
  * Represents a security assertion obtained from a successfully validated ticket.

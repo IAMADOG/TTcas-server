@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.util;
+package com.tianjunwei.org.jasig.cas.util;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

@@ -1,29 +1,14 @@
-package org.jasig.cas;
+package com.tianjunwei.org.jasig.cas;
 
-import com.codahale.metrics.annotation.Counted;
-import com.codahale.metrics.annotation.Metered;
-import com.codahale.metrics.annotation.Timed;
-import com.google.common.base.Predicate;
-import org.jasig.cas.authentication.AcceptAnyAuthenticationPolicyFactory;
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.ContextualAuthenticationPolicy;
-import org.jasig.cas.authentication.ContextualAuthenticationPolicyFactory;
-import org.jasig.cas.authentication.principal.DefaultPrincipalFactory;
-import org.jasig.cas.authentication.principal.PrincipalFactory;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.logout.LogoutManager;
-import org.jasig.cas.services.RegisteredService;
-import org.jasig.cas.services.ServiceContext;
-import org.jasig.cas.services.ServicesManager;
-import org.jasig.cas.services.UnauthorizedProxyingException;
-import org.jasig.cas.services.UnauthorizedServiceException;
-import org.jasig.cas.ticket.AbstractTicketException;
-import org.jasig.cas.ticket.InvalidTicketException;
-import org.jasig.cas.ticket.Ticket;
-import org.jasig.cas.ticket.TicketFactory;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.ticket.UnsatisfiedAuthenticationPolicyException;
-import org.jasig.cas.ticket.registry.TicketRegistry;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.function.Predicate;
+
+import javax.annotation.Resource;
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,14 +16,25 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
+import org.springframework.test.annotation.Timed;
 import org.springframework.util.Assert;
 
-import javax.annotation.Resource;
-import javax.validation.constraints.NotNull;
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
+import com.tianjunwei.org.jasig.cas.authentication.AcceptAnyAuthenticationPolicyFactory;
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicy;
+import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicyFactory;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.logout.LogoutManager;
+import com.tianjunwei.org.jasig.cas.services.RegisteredService;
+import com.tianjunwei.org.jasig.cas.services.ServiceContext;
+import com.tianjunwei.org.jasig.cas.services.ServicesManager;
+import com.tianjunwei.org.jasig.cas.services.UnauthorizedProxyingException;
+import com.tianjunwei.org.jasig.cas.services.UnauthorizedServiceException;
+import com.tianjunwei.org.jasig.cas.ticket.InvalidTicketException;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.UnsatisfiedAuthenticationPolicyException;
+import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
 
 /**
  * An abstract implementation of the {@link CentralAuthenticationService} that provides access to

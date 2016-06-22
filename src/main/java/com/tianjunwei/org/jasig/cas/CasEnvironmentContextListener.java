@@ -1,4 +1,4 @@
-package org.jasig.cas;
+package com.tianjunwei.org.jasig.cas;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.slf4j.Logger;

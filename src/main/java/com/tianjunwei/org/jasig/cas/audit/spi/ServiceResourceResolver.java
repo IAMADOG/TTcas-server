@@ -16,12 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.audit.spi;
+package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import org.aspectj.lang.JoinPoint;
-import com.github.inspektr.audit.spi.AuditResourceResolver;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.util.AopUtils;
+
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.util.AopUtils;
 
 /**
  *

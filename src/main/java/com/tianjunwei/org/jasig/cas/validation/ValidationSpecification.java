@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.validation;
+package com.tianjunwei.org.jasig.cas.validation;
 
 /**
  * An interface to impose restrictions and requirements on validations (e.g.

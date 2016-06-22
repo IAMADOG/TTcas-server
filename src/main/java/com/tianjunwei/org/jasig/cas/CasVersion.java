@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas;
+package com.tianjunwei.org.jasig.cas;
 
 /**
  * Class that exposes the CAS version. Fetches the "Implementation-Version"

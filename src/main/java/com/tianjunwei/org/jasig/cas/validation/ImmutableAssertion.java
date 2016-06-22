@@ -16,16 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.validation;
+package com.tianjunwei.org.jasig.cas.validation;
 
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.principal.Service;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 
 /**
  * An immutable, serializable ticket validation assertion.

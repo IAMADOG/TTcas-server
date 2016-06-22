@@ -16,14 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.web.view;
+package com.tianjunwei.org.jasig.cas.web.view;
 
 import java.util.Map;
 
-import org.jasig.cas.validation.Assertion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.view.AbstractView;
+
+import com.tianjunwei.org.jasig.cas.validation.Assertion;
 
 /**
  * Abstract class to handle retrieving the Assertion from the model.

@@ -17,9 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.util;
-
-import org.springframework.validation.beanvalidation.BeanValidationPostProcessor;
+package com.tianjunwei.org.jasig.cas.util;
 
 import java.lang.annotation.ElementType;
 
@@ -29,6 +27,8 @@ import javax.validation.Path.Node;
 import javax.validation.TraversableResolver;
 import javax.validation.Validation;
 import javax.validation.Validator;
+
+import org.springframework.validation.beanvalidation.BeanValidationPostProcessor;
 
 /**
  * Provides a custom {@link javax.validation.TraversableResolver} that should work in JPA2 environments without the JPA2
