@@ -16,14 +16,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.principal;
+package com.tianjunwei.org.jasig.cas.authentication.principal;
 
 import java.util.List;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
 
 /**
  * Delegates to one or more principal resolves in series to resolve a principal. The input to first configured resolver

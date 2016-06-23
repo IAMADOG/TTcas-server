@@ -17,11 +17,11 @@
  * under the License.
  */
 
-package org.jasig.cas.ticket.registry;
+package com.tianjunwei.org.jasig.cas.ticket.registry;
 
 import java.util.Collection;
 
-import org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
 
 /**
  * Interface for a registry that stores tickets. The underlying registry can be

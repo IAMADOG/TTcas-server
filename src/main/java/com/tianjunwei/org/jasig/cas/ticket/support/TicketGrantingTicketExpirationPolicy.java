@@ -16,17 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.support;
+package com.tianjunwei.org.jasig.cas.ticket.support;
 
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.TicketState;
+import java.io.Serializable;
+import java.util.concurrent.TimeUnit;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
-import java.io.Serializable;
-import java.util.concurrent.TimeUnit;
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.TicketState;
 
 /**
  * Provides the Ticket Granting Ticket expiration policy.  Ticket Granting Tickets

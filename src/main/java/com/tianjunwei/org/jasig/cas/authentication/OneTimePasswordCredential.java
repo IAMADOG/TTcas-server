@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 /**
  * Describes a one-time-password credential that contains an optional unique identifier and required password.

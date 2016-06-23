@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.support;
+package com.tianjunwei.org.jasig.cas.authentication.support;
 
-import org.jasig.cas.Message;
+import com.tianjunwei.org.jasig.cas.Message;
 
 /**
  * Message conveying account password expiration warning details.

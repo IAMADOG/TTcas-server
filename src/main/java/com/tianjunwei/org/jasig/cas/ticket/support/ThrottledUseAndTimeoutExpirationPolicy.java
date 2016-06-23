@@ -16,14 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.support;
+package com.tianjunwei.org.jasig.cas.ticket.support;
 
 import java.io.Serializable;
 
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.TicketState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.TicketState;
 
 /**
  * Implementation of an expiration policy that adds the concept of saying that a

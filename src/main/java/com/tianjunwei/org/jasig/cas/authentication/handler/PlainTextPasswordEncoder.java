@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.handler;
+package com.tianjunwei.org.jasig.cas.authentication.handler;
 
 /**
  * Default password encoder for the case where no password encoder is needed.

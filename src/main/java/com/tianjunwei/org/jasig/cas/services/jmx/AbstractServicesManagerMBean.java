@@ -17,19 +17,21 @@
  * under the License.
  */
 
-package org.jasig.cas.services.jmx;
+package com.tianjunwei.org.jasig.cas.services.jmx;
 
-import org.jasig.cas.services.RegisteredService;
-import org.jasig.cas.services.RegisteredServiceImpl;
-import org.jasig.cas.services.ServicesManager;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.validation.constraints.NotNull;
+
 import org.springframework.jmx.export.annotation.ManagedAttribute;
 import org.springframework.jmx.export.annotation.ManagedOperation;
 import org.springframework.jmx.export.annotation.ManagedOperationParameter;
 import org.springframework.util.Assert;
 
-import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
+import com.tianjunwei.org.jasig.cas.services.RegisteredService;
+import com.tianjunwei.org.jasig.cas.services.RegisteredServiceImpl;
+import com.tianjunwei.org.jasig.cas.services.ServicesManager;
 
 /**
  * Abstract base class to support both the {@link org.jasig.cas.services.ServicesManager} and the

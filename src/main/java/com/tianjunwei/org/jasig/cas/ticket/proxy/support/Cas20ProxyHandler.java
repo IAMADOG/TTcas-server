@@ -16,18 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.proxy.support;
+package com.tianjunwei.org.jasig.cas.ticket.proxy.support;
 
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.HttpBasedServiceCredential;
-import org.jasig.cas.ticket.proxy.ProxyHandler;
-import org.jasig.cas.util.DefaultUniqueTicketIdGenerator;
-import org.jasig.cas.util.HttpClient;
-import org.jasig.cas.util.UniqueTicketIdGenerator;
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.validation.constraints.NotNull;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.HttpBasedServiceCredential;
+import com.tianjunwei.org.jasig.cas.ticket.proxy.ProxyHandler;
+import com.tianjunwei.org.jasig.cas.util.DefaultUniqueTicketIdGenerator;
+import com.tianjunwei.org.jasig.cas.util.HttpClient;
+import com.tianjunwei.org.jasig.cas.util.UniqueTicketIdGenerator;
 
 /**
  * Proxy Handler to handle the default callback functionality of CAS 2.0.

@@ -16,15 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.support;
+package com.tianjunwei.org.jasig.cas.ticket.support;
 
 import java.io.Serializable;
 
-import org.jasig.cas.authentication.RememberMeCredential;
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.TicketState;
-
 import javax.validation.constraints.NotNull;
+
+import com.tianjunwei.org.jasig.cas.authentication.RememberMeCredential;
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.TicketState;
 
 /**
  * Delegates to different expiration policies depending on whether remember me

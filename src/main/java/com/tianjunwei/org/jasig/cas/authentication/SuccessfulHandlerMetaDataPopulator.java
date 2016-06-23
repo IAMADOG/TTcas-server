@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 /**
  * Sets an authentication attribute containing the collection of authentication handlers (by name) that successfully

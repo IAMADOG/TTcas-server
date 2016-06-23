@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,8 +24,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jasig.cas.authentication.principal.Principal;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
 
 /**
  * Constructs immutable {@link Authentication} objects using the builder pattern.

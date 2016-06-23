@@ -16,17 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.registry;
-
-import org.jasig.cas.ticket.ServiceTicket;
-import org.jasig.cas.ticket.Ticket;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.springframework.util.Assert;
+package com.tianjunwei.org.jasig.cas.ticket.registry;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.ticket.ServiceTicket;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
 
 /**
  * Implementation of the TicketRegistry that is backed by a ConcurrentHashMap.

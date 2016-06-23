@@ -20,7 +20,7 @@ package com.tianjunwei.org.jasig.cas.web.bind;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
 
 /**
  * Interface for a class that can bind items stored in the request to a

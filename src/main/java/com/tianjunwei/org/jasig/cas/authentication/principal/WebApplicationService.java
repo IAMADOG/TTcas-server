@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.principal;
+package com.tianjunwei.org.jasig.cas.authentication.principal;
 
 /**
  * Represents a service using CAS that comes from the web.

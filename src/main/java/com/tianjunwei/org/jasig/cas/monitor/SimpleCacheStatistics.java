@@ -17,11 +17,11 @@
  * under the License.
  */
 
-package org.jasig.cas.monitor;
+package com.tianjunwei.org.jasig.cas.monitor;
 
 import java.util.Formatter;
 
-import org.apache.commons.io.IOUtils;
+import sun.misc.IOUtils;
 
 /**
  * Simple implementation of cache statistics.

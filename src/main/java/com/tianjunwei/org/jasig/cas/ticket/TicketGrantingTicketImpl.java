@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket;
+package com.tianjunwei.org.jasig.cas.ticket;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,16 +24,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Lob;
-import javax.persistence.Table;
-
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.principal.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 
 /**
  * Concrete implementation of a TicketGrantingTicket. A TicketGrantingTicket is

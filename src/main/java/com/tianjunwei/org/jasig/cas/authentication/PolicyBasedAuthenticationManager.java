@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
@@ -25,15 +25,15 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.validation.constraints.NotNull;
 
-import com.github.inspektr.audit.annotation.Audit;
-import org.jasig.cas.authentication.principal.PrincipalResolver;
-import org.jasig.cas.authentication.principal.Principal;
-import org.perf4j.aop.Profiled;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import com.tianjunwei.org.jasig.cas.authentication.principal.PrincipalResolver;
 
 /**
  * Provides an authenticaiton manager that is inherently aware of multiple credentials and supports pluggable

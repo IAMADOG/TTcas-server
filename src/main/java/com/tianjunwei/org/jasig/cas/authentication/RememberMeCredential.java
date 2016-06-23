@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 /**
  * Credential that wish to handle remember me scenarios need

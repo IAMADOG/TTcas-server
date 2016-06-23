@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.monitor;
+package com.tianjunwei.org.jasig.cas.monitor;
 
 /**
  * Describes the memory status of the JVM.

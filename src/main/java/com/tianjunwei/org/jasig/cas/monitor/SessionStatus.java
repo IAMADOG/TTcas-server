@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.monitor;
+package com.tianjunwei.org.jasig.cas.monitor;
 
 /**
  * Provides status information about the number of SSO sessions established in CAS.

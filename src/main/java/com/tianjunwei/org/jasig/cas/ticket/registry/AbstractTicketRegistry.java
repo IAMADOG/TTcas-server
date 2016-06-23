@@ -16,13 +16,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.registry;
+package com.tianjunwei.org.jasig.cas.ticket.registry;
 
-import org.jasig.cas.monitor.TicketRegistryState;
-import org.jasig.cas.ticket.Ticket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.monitor.TicketRegistryState;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
 
 /**
  * @author Scott Battaglia

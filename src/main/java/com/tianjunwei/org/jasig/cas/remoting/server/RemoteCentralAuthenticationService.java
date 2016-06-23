@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.remoting.server;
+package com.tianjunwei.org.jasig.cas.remoting.server;
 
 import java.util.List;
 import java.util.Set;
@@ -26,14 +26,15 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.constraints.NotNull;
 
-import org.jasig.cas.CentralAuthenticationService;
-import org.jasig.cas.authentication.AuthenticationException;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.logout.LogoutRequest;
-import org.jasig.cas.ticket.TicketException;
-import org.jasig.cas.validation.Assertion;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.CentralAuthenticationService;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.logout.LogoutRequest;
+import com.tianjunwei.org.jasig.cas.ticket.TicketException;
+import com.tianjunwei.org.jasig.cas.validation.Assertion;
 
 /**
  * Wrapper implementation around a CentralAuthenticationService that does

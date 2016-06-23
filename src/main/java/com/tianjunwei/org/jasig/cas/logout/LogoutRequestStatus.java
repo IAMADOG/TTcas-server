@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.logout;
+package com.tianjunwei.org.jasig.cas.logout;
 
 /**
  * Define the status of a logout request.

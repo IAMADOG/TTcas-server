@@ -16,10 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.handler;
+package com.tianjunwei.org.jasig.cas.authentication.handler;
 
-import org.jasig.cas.authentication.RootCasException;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.RootCasException;
 
 /**
  * The most generic type of authentication exception that one can catch if not

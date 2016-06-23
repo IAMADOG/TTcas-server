@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.monitor;
+package com.tianjunwei.org.jasig.cas.monitor;
 
 /**
  * Describes the simplest set of cache statistics that are meaningful for health monitoring.

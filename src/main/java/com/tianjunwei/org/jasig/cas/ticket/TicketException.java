@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket;
+package com.tianjunwei.org.jasig.cas.ticket;
 
-import org.jasig.cas.authentication.RootCasException;
+import com.tianjunwei.org.jasig.cas.authentication.RootCasException;
 
 /**
  * Generic ticket exception. Top of the TicketException hierarchy.

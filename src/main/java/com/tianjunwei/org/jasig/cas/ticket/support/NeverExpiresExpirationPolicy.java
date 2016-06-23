@@ -16,10 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.support;
+package com.tianjunwei.org.jasig.cas.ticket.support;
 
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.TicketState;
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.TicketState;
 
 /**
  * NeverExpiresExpirationPolicy always answers false when asked if a Ticket is

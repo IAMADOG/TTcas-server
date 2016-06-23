@@ -16,17 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.registry;
+package com.tianjunwei.org.jasig.cas.ticket.registry;
 
 import java.util.List;
 import java.util.Map;
 
-import org.jasig.cas.authentication.Authentication;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.ServiceTicket;
-import org.jasig.cas.ticket.Ticket;
-import org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.authentication.Authentication;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.ServiceTicket;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
 
 /**
  * Abstract Implementation that handles some of the commonalities between

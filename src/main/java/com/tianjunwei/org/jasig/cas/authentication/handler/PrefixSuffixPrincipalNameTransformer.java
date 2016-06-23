@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.authentication.handler;
+package com.tianjunwei.org.jasig.cas.authentication.handler;
 
 /**
  * Transform the user id by adding a prefix or suffix.

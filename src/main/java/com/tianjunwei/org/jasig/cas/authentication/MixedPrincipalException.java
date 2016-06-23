@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
-import org.jasig.cas.authentication.principal.Principal;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
 
 /**
  * Describes an error condition where non-identical principals have been resolved while authenticating

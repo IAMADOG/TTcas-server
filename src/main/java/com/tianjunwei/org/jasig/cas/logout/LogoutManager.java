@@ -16,11 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.logout;
+package com.tianjunwei.org.jasig.cas.logout;
 
 import java.util.List;
 
-import org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
 
 /**
  * A logout manager handles the Single Log Out process.

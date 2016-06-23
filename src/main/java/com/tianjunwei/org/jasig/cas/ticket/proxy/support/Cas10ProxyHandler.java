@@ -16,10 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.proxy.support;
+package com.tianjunwei.org.jasig.cas.ticket.proxy.support;
 
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.ticket.proxy.ProxyHandler;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.ticket.proxy.ProxyHandler;
 
 /**
  * Dummy ProxyHandler that does nothing. Useful for Cas 1.0 compliance as CAS

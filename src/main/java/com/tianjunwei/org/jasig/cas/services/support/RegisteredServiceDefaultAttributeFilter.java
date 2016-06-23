@@ -16,16 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.services.support;
+package com.tianjunwei.org.jasig.cas.services.support;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.jasig.cas.services.RegisteredService;
-import org.jasig.cas.services.RegisteredServiceAttributeFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.tianjunwei.org.jasig.cas.services.RegisteredService;
+import com.tianjunwei.org.jasig.cas.services.RegisteredServiceAttributeFilter;
 
 /**
  * The default filter that is responsible to make sure only the allowed attributes for a given

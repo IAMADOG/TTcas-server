@@ -16,14 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.support;
-
-import org.jasig.cas.ticket.ExpirationPolicy;
-import org.jasig.cas.ticket.TicketState;
-import org.springframework.util.Assert;
+package com.tianjunwei.org.jasig.cas.ticket.support;
 
 import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
+
+import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
+import com.tianjunwei.org.jasig.cas.ticket.TicketState;
 
 /**
  * ExpirationPolicy that is based on certain number of uses of a ticket or a

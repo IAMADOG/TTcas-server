@@ -16,18 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.Map;
 
-import org.jasig.cas.authentication.handler.support.AbstractUsernamePasswordAuthenticationHandler;
-import org.jasig.cas.authentication.principal.SimplePrincipal;
-
 import javax.security.auth.login.AccountNotFoundException;
 import javax.security.auth.login.FailedLoginException;
 import javax.validation.constraints.NotNull;
+
+import com.tianjunwei.org.jasig.cas.authentication.handler.support.AbstractUsernamePasswordAuthenticationHandler;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SimplePrincipal;
 
 /**
  * Handler that contains a list of valid users and passwords. Useful if there is

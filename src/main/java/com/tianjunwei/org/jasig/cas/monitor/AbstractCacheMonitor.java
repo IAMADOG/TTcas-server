@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.monitor;
+package com.tianjunwei.org.jasig.cas.monitor;
 
 /**
  * Abstract base class for monitors that observe cache storage systems.

@@ -16,13 +16,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.logout;
+package com.tianjunwei.org.jasig.cas.logout;
 
-import org.jasig.cas.util.DefaultUniqueTicketIdGenerator;
-import org.jasig.cas.util.SamlDateUtils;
-import org.jasig.cas.util.UniqueTicketIdGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.tianjunwei.org.jasig.cas.util.DefaultUniqueTicketIdGenerator;
+import com.tianjunwei.org.jasig.cas.util.SamlDateUtils;
+import com.tianjunwei.org.jasig.cas.util.UniqueTicketIdGenerator;
 
 /**
  * A builder that uses the saml standard's <code>LogoutRequest</code> template in order

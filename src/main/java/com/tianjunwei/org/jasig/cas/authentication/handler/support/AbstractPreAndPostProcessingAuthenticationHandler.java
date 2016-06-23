@@ -16,18 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.handler.support;
+package com.tianjunwei.org.jasig.cas.authentication.handler.support;
 
 import java.security.GeneralSecurityException;
 
-import org.jasig.cas.authentication.AbstractAuthenticationHandler;
-import org.jasig.cas.authentication.HandlerResult;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.PreventedException;
+import javax.security.auth.login.FailedLoginException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.security.auth.login.FailedLoginException;
+import com.tianjunwei.org.jasig.cas.authentication.AbstractAuthenticationHandler;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
+import com.tianjunwei.org.jasig.cas.authentication.PreventedException;
 
 /**
  * Abstract authentication handler that allows deployers to utilize the bundled

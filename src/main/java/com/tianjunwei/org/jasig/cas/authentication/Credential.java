@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
 /**
  * Describes an authentication credential. Implementations SHOULD also implement {@link CredentialMetaData} if

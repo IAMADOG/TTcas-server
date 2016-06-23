@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.handler;
+package com.tianjunwei.org.jasig.cas.authentication.handler;
 
 /**
  * Generic abstract exception to extend when you don't know what the heck is

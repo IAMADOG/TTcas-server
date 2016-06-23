@@ -16,11 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.logout;
+package com.tianjunwei.org.jasig.cas.logout;
 
 import java.io.Serializable;
 
-import org.jasig.cas.authentication.principal.SingleLogoutService;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SingleLogoutService;
 
 /**
  * Define a logout request for a service accessed by a user.

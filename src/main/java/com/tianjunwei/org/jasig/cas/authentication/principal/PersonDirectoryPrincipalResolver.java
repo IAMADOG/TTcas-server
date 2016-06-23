@@ -16,20 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.principal;
+package com.tianjunwei.org.jasig.cas.authentication.principal;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jasig.cas.authentication.Credential;
-import org.jasig.services.persondir.IPersonAttributeDao;
-import org.jasig.services.persondir.IPersonAttributes;
-import org.jasig.services.persondir.support.StubPersonAttributeDao;
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.validation.constraints.NotNull;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
 
 /**
  * Resolves principals by querying a data source using the Jasig

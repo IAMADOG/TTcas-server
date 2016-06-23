@@ -16,12 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.principal;
+package com.tianjunwei.org.jasig.cas.authentication.principal;
 
-import org.jasig.cas.authentication.AuthenticationBuilder;
-import org.jasig.cas.authentication.AuthenticationMetaDataPopulator;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.RememberMeCredential;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationBuilder;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationMetaDataPopulator;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.RememberMeCredential;
 
 /**
  * Determines if the credential provided are for Remember Me Services and then sets the appropriate

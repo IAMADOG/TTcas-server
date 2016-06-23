@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication;
+package com.tianjunwei.org.jasig.cas.authentication;
 
-import org.jasig.cas.services.ServiceContext;
+import com.tianjunwei.org.jasig.cas.services.ServiceContext;
 
 /**
  * Produces {@link ContextualAuthenticationPolicy} instances that are satisfied iff the given {@link Authentication}

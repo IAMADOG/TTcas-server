@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.proxy;
+package com.tianjunwei.org.jasig.cas.ticket.proxy;
 
-import org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
 
 /**
  * Abstraction for what needs to be done to handle proxies. Useful because the

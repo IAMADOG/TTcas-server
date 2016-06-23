@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.logout;
+package com.tianjunwei.org.jasig.cas.logout;
 
 /**
  * Contract that defines the format of the logout message sent to a client to indicate

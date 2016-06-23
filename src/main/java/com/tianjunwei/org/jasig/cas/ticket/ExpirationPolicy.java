@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket;
+package com.tianjunwei.org.jasig.cas.ticket;
 
 import java.io.Serializable;
 

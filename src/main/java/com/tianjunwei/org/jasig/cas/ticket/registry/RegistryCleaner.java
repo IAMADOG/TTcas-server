@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.jasig.cas.ticket.registry;
+package com.tianjunwei.org.jasig.cas.ticket.registry;
 
 /**
  * Strategy interface to denote the start of cleaning the registry.

@@ -16,21 +16,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.ticket.registry.support;
+package com.tianjunwei.org.jasig.cas.ticket.registry.support;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.jasig.cas.logout.LogoutManager;
-import org.jasig.cas.ticket.Ticket;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.ticket.registry.RegistryCleaner;
-import org.jasig.cas.ticket.registry.TicketRegistry;
+import javax.validation.constraints.NotNull;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.validation.constraints.NotNull;
+import com.tianjunwei.org.jasig.cas.logout.LogoutManager;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.registry.RegistryCleaner;
+import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
 
 /**
  * The default ticket registry cleaner scans the entire CAS ticket registry

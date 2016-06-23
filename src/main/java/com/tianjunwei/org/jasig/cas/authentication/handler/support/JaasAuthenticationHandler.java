@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.handler.support;
+package com.tianjunwei.org.jasig.cas.authentication.handler.support;
 
 import java.security.GeneralSecurityException;
 import java.util.Set;
@@ -30,12 +30,13 @@ import javax.security.auth.login.Configuration;
 import javax.security.auth.login.LoginContext;
 import javax.validation.constraints.NotNull;
 
-import org.jasig.cas.authentication.HandlerResult;
-import org.jasig.cas.authentication.PreventedException;
-import org.jasig.cas.authentication.UsernamePasswordCredential;
-import org.jasig.cas.authentication.principal.Principal;
-import org.jasig.cas.authentication.principal.SimplePrincipal;
 import org.springframework.util.Assert;
+
+import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
+import com.tianjunwei.org.jasig.cas.authentication.PreventedException;
+import com.tianjunwei.org.jasig.cas.authentication.UsernamePasswordCredential;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SimplePrincipal;
 
 /**
  * JAAS Authentication Handler for CAAS. This is a simple bridge from CAS'

@@ -16,15 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.authentication.principal;
+package com.tianjunwei.org.jasig.cas.authentication.principal;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.jasig.cas.authentication.principal.Response.ResponseType;
 import org.springframework.util.StringUtils;
+
+import com.tianjunwei.org.jasig.cas.authentication.principal.Response.ResponseType;
 
 /**
  * Represents a service which wishes to use the CAS protocol.
