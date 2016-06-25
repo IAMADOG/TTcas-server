@@ -23,9 +23,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.tianjunwei.org.jasig.cas.authentication.Credential;
-import com.tianjunwei.org.jasig.services.persondir.IPersonAttributeDao;
-import com.tianjunwei.org.jasig.services.persondir.IPersonAttributes;
-import com.tianjunwei.org.jasig.services.persondir.support.StubPersonAttributeDao;
+import org.jasig.services.persondir.IPersonAttributeDao;
+import org.jasig.services.persondir.IPersonAttributes;
+import org.jasig.services.persondir.support.StubPersonAttributeDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

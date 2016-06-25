@@ -130,7 +130,6 @@ public class RegisteredServiceRegexAttributeFilter implements RegisteredServiceA
     }
 
     private void logReleasedAttributeEntry(final String attributeName, final String attributeValue) {
-        logger.debug("The attribute value [{}] for attribute name {} matches the pattern {}. Releasing attribute...",
-                attributeValue, attributeName, this.pattern.pattern());
+        logger.debug("The attribute value [{}] for attribute name {} matches the pattern {}. Releasing attribute...");
     }
 }

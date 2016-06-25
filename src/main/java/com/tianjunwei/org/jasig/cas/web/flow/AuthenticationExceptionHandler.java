@@ -24,7 +24,9 @@ import java.util.List;
 
 import javax.validation.constraints.NotNull;
 
+import com.sun.jndi.url.corbaname.corbanameURLContextFactory;
 import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.binding.message.MessageBuilder;
@@ -63,9 +65,9 @@ public class AuthenticationExceptionHandler {
         DEFAULT_ERROR_LIST.add(javax.security.auth.login.FailedLoginException.class);
         DEFAULT_ERROR_LIST.add(javax.security.auth.login.CredentialExpiredException.class);
         DEFAULT_ERROR_LIST.add(javax.security.auth.login.AccountNotFoundException.class);
-        DEFAULT_ERROR_LIST.add(org.jasig.cas.authentication.AccountDisabledException.class);
-        DEFAULT_ERROR_LIST.add(org.jasig.cas.authentication.InvalidLoginLocationException.class);
-        DEFAULT_ERROR_LIST.add(org.jasig.cas.authentication.InvalidLoginTimeException.class);
+        DEFAULT_ERROR_LIST.add(com.tianjunwei.org.jasig.cas.authentication.AccountDisabledException.class);
+        DEFAULT_ERROR_LIST.add(com.tianjunwei.org.jasig.cas.authentication.InvalidLoginLocationException.class);
+        DEFAULT_ERROR_LIST.add(com.tianjunwei.org.jasig.cas.authentication.InvalidLoginTimeException.class);
     }
 
     /** Ordered list of error classes that this class knows how to handle. */

@@ -260,17 +260,14 @@ public class PolicyBasedAuthenticationManager implements AuthenticationManager {
         if (resolver.supports(credential)) {
             try {
                 final Principal p = resolver.resolve(credential);
-                logger.debug("{} resolved {} from {}", resolver, p, credential);
+                logger.debug("{} resolved {} from {}");
                 return p;
             } catch (final Exception e) {
-                logger.error("{} failed to resolve principal from {}", resolver, credential, e);
+                logger.error("{} failed to resolve principal from {}");
             }
         } else {
             logger.warn(
-                    "{} is configured to use {} but it does not support {}, which suggests a configuration problem.",
-                    handlerName,
-                    resolver,
-                    credential);
+                    "{} is configured to use {} but it does not support {}, which suggests a configuration problem.");
         }
         return null;
     }

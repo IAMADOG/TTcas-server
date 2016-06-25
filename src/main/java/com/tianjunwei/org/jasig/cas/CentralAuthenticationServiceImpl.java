@@ -426,8 +426,7 @@ public final class CentralAuthenticationServiceImpl implements CentralAuthentica
                 }
 
                 if (!serviceTicket.isValidFor(service)) {
-                    logger.error("ServiceTicket [{}] with service [{}] does not match supplied service [{}]",
-                            serviceTicketId, serviceTicket.getService().getId(), service);
+                    logger.error("ServiceTicket [{}] with service [{}] does not match supplied service [{}]");
                     throw new TicketValidationException(serviceTicket.getService());
                 }
             }
