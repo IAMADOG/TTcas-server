@@ -26,11 +26,10 @@ import java.util.regex.Pattern;
 
 import javax.validation.constraints.NotNull;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.tianjunwei.org.jasig.cas.services.RegisteredService;
 import com.tianjunwei.org.jasig.cas.services.RegisteredServiceAttributeFilter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * The regex filter that is responsible to make sure only attributes that match a certain regex pattern

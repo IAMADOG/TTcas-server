@@ -27,13 +27,13 @@ import java.util.zip.Deflater;
 import javax.validation.constraints.NotNull;
 
 import org.apache.commons.codec.binary.Base64;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.authentication.principal.SingleLogoutService;
-import org.jasig.cas.services.LogoutType;
-import org.jasig.cas.services.RegisteredService;
-import org.jasig.cas.services.ServicesManager;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.util.HttpClient;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.authentication.principal.SingleLogoutService;
+import com.tianjunwei.org.jasig.cas.services.LogoutType;
+import com.tianjunwei.org.jasig.cas.services.RegisteredService;
+import com.tianjunwei.org.jasig.cas.services.ServicesManager;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.util.HttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

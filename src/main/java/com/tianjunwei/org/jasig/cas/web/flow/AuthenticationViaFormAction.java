@@ -16,25 +16,25 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.web.flow;
+package com.tianjunwei.org.jasig.cas.web.flow;
 
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
 
-import org.jasig.cas.CentralAuthenticationService;
-import org.jasig.cas.Message;
-import org.jasig.cas.authentication.AuthenticationException;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.authentication.HandlerResult;
-import org.jasig.cas.authentication.principal.Service;
-import org.jasig.cas.ticket.TicketCreationException;
-import org.jasig.cas.ticket.TicketException;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.ticket.registry.TicketRegistry;
-import org.jasig.cas.web.bind.CredentialsBinder;
-import org.jasig.cas.web.support.WebUtils;
+import com.tianjunwei.org.jasig.cas.CentralAuthenticationService;
+import com.tianjunwei.org.jasig.cas.Message;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.ticket.TicketCreationException;
+import com.tianjunwei.org.jasig.cas.ticket.TicketException;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
+import com.tianjunwei.org.jasig.cas.web.bind.CredentialsBinder;
+import com.tianjunwei.org.jasig.cas.web.support.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.binding.message.MessageBuilder;
@@ -107,7 +107,7 @@ public class AuthenticationViaFormAction {
         final String providedLoginTicket = WebUtils.getLoginTicketFromRequest(context);
         if (!authoritativeLoginTicket.equals(providedLoginTicket)) {
             logger.warn("Invalid login ticket {}", providedLoginTicket);
-            messageContext.addMessage(new MessageBuilder().error().code("error.invalid.loginticket").build());
+            messageContext.addMessage(new MessageBuilder().code("error.invalid.loginticket").build());
             return newEvent(ERROR);
         }
 

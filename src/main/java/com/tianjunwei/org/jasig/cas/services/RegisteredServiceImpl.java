@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.services;
+package com.tianjunwei.org.jasig.cas.services;
 
-import org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 

@@ -21,12 +21,8 @@ package com.tianjunwei.org.jasig.cas.authentication.handler.support;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-import javax.security.auth.login.AccountNotFoundException;
-import javax.validation.constraints.NotNull;
-
 import com.tianjunwei.org.jasig.cas.Message;
 import com.tianjunwei.org.jasig.cas.authentication.BasicCredentialMetaData;
-import com.tianjunwei.org.jasig.cas.authentication.Credential;
 import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
 import com.tianjunwei.org.jasig.cas.authentication.PreventedException;
 import com.tianjunwei.org.jasig.cas.authentication.UsernamePasswordCredential;
@@ -36,6 +32,10 @@ import com.tianjunwei.org.jasig.cas.authentication.handler.PlainTextPasswordEnco
 import com.tianjunwei.org.jasig.cas.authentication.handler.PrincipalNameTransformer;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
 import com.tianjunwei.org.jasig.cas.authentication.support.PasswordPolicyConfiguration;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+
+import javax.security.auth.login.AccountNotFoundException;
+import javax.validation.constraints.NotNull;
 
 /**
  * Abstract class to override supports so that we don't need to duplicate the

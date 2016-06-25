@@ -20,12 +20,16 @@ package com.tianjunwei.org.jasig.cas.web.flow;
 
 import javax.validation.constraints.NotNull;
 
+import com.tianjunwei.org.jasig.cas.CentralAuthenticationService;
+import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.ticket.TicketException;
+import com.tianjunwei.org.jasig.cas.web.support.WebUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.webflow.action.AbstractAction;
 import org.springframework.webflow.execution.Event;
 import org.springframework.webflow.execution.RequestContext;
-
-import com.tianjunwei.org.jasig.cas.CentralAuthenticationService;
 
 /**
  * Abstract class to handle the retrieval and authentication of non-interactive

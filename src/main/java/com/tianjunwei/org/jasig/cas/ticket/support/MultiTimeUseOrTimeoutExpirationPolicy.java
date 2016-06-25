@@ -18,13 +18,12 @@
  */
 package com.tianjunwei.org.jasig.cas.ticket.support;
 
-import java.io.Serializable;
-import java.util.concurrent.TimeUnit;
-
-import org.springframework.util.Assert;
-
 import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
 import com.tianjunwei.org.jasig.cas.ticket.TicketState;
+import org.springframework.util.Assert;
+
+import java.io.Serializable;
+import java.util.concurrent.TimeUnit;
 
 /**
  * ExpirationPolicy that is based on certain number of uses of a ticket or a

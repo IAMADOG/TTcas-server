@@ -21,6 +21,16 @@ package com.tianjunwei.org.jasig.cas.ticket.registry.support;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.Id;
+import javax.persistence.LockModeType;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceException;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 
 import org.slf4j.Logger;

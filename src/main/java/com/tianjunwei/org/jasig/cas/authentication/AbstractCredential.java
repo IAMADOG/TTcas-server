@@ -20,7 +20,7 @@ package com.tianjunwei.org.jasig.cas.authentication;
 
 import java.io.Serializable;
 
-import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 
 /**
  * Base class for CAS credentials that are safe for long-term storage.

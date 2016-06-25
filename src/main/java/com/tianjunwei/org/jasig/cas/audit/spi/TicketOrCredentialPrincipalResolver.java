@@ -16,16 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.audit.spi;
+package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import org.aspectj.lang.JoinPoint;
 import com.github.inspektr.common.spi.PrincipalResolver;
-import org.jasig.cas.authentication.Credential;
-import org.jasig.cas.ticket.ServiceTicket;
-import org.jasig.cas.ticket.Ticket;
-import org.jasig.cas.ticket.TicketGrantingTicket;
-import org.jasig.cas.ticket.registry.TicketRegistry;
-import org.jasig.cas.util.AopUtils;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.cas.ticket.ServiceTicket;
+import com.tianjunwei.org.jasig.cas.ticket.Ticket;
+import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
+import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
+import com.tianjunwei.org.jasig.cas.util.AopUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;

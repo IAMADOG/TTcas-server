@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.services;
+package com.tianjunwei.org.jasig.cas.services;
 
 /**
  * Enumeration of the logout type.

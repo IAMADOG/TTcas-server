@@ -22,15 +22,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-
+import javax.persistence.EntityManager;
+import javax.persistence.LockModeType;
+import javax.persistence.PersistenceContext;
 import javax.validation.constraints.NotNull;
-
-import org.springframework.transaction.annotation.Transactional;
 
 import com.tianjunwei.org.jasig.cas.ticket.ServiceTicket;
 import com.tianjunwei.org.jasig.cas.ticket.ServiceTicketImpl;
 import com.tianjunwei.org.jasig.cas.ticket.Ticket;
 import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicketImpl;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * JPA implementation of a CAS {@link TicketRegistry}. This implementation of

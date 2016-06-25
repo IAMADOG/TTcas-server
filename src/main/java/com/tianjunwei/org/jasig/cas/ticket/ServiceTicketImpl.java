@@ -18,10 +18,14 @@
  */
 package com.tianjunwei.org.jasig.cas.ticket;
 
-import org.springframework.util.Assert;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Lob;
+import javax.persistence.Table;
 
 import com.tianjunwei.org.jasig.cas.authentication.Authentication;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import org.springframework.util.Assert;
 
 /**
  * Domain object representing a Service Ticket. A service ticket grants specific

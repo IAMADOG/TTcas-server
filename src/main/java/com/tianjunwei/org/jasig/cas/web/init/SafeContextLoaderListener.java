@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.web.init;
+package com.tianjunwei.org.jasig.cas.web.init;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;

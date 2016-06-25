@@ -30,13 +30,12 @@ import javax.security.auth.login.Configuration;
 import javax.security.auth.login.LoginContext;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.util.Assert;
-
 import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
 import com.tianjunwei.org.jasig.cas.authentication.PreventedException;
 import com.tianjunwei.org.jasig.cas.authentication.UsernamePasswordCredential;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
 import com.tianjunwei.org.jasig.cas.authentication.principal.SimplePrincipal;
+import org.springframework.util.Assert;
 
 /**
  * JAAS Authentication Handler for CAAS. This is a simple bridge from CAS'

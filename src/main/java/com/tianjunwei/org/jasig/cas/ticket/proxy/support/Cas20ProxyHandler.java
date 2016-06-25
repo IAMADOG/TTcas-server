@@ -18,17 +18,16 @@
  */
 package com.tianjunwei.org.jasig.cas.ticket.proxy.support;
 
-import javax.validation.constraints.NotNull;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.tianjunwei.org.jasig.cas.authentication.Credential;
 import com.tianjunwei.org.jasig.cas.authentication.HttpBasedServiceCredential;
 import com.tianjunwei.org.jasig.cas.ticket.proxy.ProxyHandler;
 import com.tianjunwei.org.jasig.cas.util.DefaultUniqueTicketIdGenerator;
 import com.tianjunwei.org.jasig.cas.util.HttpClient;
 import com.tianjunwei.org.jasig.cas.util.UniqueTicketIdGenerator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * Proxy Handler to handle the default callback functionality of CAS 2.0.

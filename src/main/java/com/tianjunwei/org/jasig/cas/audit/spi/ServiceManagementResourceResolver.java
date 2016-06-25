@@ -21,7 +21,7 @@ package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import com.github.inspektr.audit.spi.AuditResourceResolver;
 import org.aspectj.lang.JoinPoint;
-import org.jasig.cas.util.AopUtils;
+import com.tianjunwei.org.jasig.cas.util.AopUtils;
 
 
 /**

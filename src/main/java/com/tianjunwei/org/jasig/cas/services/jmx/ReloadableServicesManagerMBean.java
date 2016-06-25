@@ -19,10 +19,9 @@
 
 package com.tianjunwei.org.jasig.cas.services.jmx;
 
+import com.tianjunwei.org.jasig.cas.services.ReloadableServicesManager;
 import org.springframework.jmx.export.annotation.ManagedOperation;
 import org.springframework.jmx.export.annotation.ManagedResource;
-
-import com.tianjunwei.org.jasig.cas.services.ReloadableServicesManager;
 
 /**
  * Provides capabilities to reload a {@link org.jasig.cas.services.ReloadableServicesManager} from JMX.

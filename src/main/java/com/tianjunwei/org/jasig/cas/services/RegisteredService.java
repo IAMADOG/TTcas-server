@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.services;
+package com.tianjunwei.org.jasig.cas.services;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
-import org.jasig.cas.authentication.principal.Service;
+import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 
 /**
  * Interface for a service that can be registered by the Services Management
@@ -34,7 +34,7 @@ import org.jasig.cas.authentication.principal.Service;
 public interface RegisteredService extends Cloneable, Serializable {
 
     /** Initial ID value of newly created (but not persisted) registered service. **/
-    long INITIAL_IDENTIFIER_VALUE = -Long.MAX_VALUE;
+    long INITIAL_IDENTIFIER_VALUE = Long.MAX_VALUE;
 
     /**
      * Is this application currently allowed to use CAS?

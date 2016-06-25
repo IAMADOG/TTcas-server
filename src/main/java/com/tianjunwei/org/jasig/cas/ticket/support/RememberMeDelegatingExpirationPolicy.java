@@ -20,11 +20,11 @@ package com.tianjunwei.org.jasig.cas.ticket.support;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotNull;
-
 import com.tianjunwei.org.jasig.cas.authentication.RememberMeCredential;
 import com.tianjunwei.org.jasig.cas.ticket.ExpirationPolicy;
 import com.tianjunwei.org.jasig.cas.ticket.TicketState;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * Delegates to different expiration policies depending on whether remember me

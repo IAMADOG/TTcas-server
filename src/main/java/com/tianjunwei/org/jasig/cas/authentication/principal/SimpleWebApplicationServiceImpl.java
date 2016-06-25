@@ -23,9 +23,8 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.util.StringUtils;
-
 import com.tianjunwei.org.jasig.cas.authentication.principal.Response.ResponseType;
+import org.springframework.util.StringUtils;
 
 /**
  * Represents a service which wishes to use the CAS protocol.

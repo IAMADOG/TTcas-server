@@ -16,11 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.jasig.cas.audit.spi;
+package com.tianjunwei.org.jasig.cas.audit.spi;
 
 import com.github.inspektr.audit.spi.AuditResourceResolver;
 import org.aspectj.lang.JoinPoint;
-import org.jasig.cas.util.AopUtils;
+import com.tianjunwei.org.jasig.cas.util.AopUtils;
 
 /**
  * Implementation of the ResourceResolver that can determine the Ticket Id from the first parameter of the method call.

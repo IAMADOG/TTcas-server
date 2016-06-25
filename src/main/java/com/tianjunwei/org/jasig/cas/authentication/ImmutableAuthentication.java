@@ -24,11 +24,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.springframework.util.Assert;
-
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import org.springframework.util.Assert;
 
 /**
  * Immutable authentication event whose attributes may not change after creation.

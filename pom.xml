@@ -12,6 +12,86 @@
 		<junit.version>4.12</junit.version>
 	</properties>
 	<dependencies>
+	
+		<dependency>
+    		<groupId>javax.validation</groupId>
+    		<artifactId>validation-api</artifactId>
+    		<version>1.1.0.Final</version>
+		</dependency>
+	
+		<dependency>
+    		<groupId>commons-io</groupId>
+    		<artifactId>commons-io</artifactId>
+    		<version>2.4</version>
+		</dependency>
+
+
+		<dependency>
+    		<groupId>org.perf4j</groupId>
+    		<artifactId>perf4j</artifactId>
+    		<version>0.9.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-jexl</groupId>
+			<artifactId>commons-jexl</artifactId>
+			<version>1.1</version>
+			<scope>runtime</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.santuario</groupId>
+			<artifactId>xmlsec</artifactId>
+			<version>1.4.3</version>
+			<scope>runtime</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.opensaml</groupId>
+			<artifactId>opensaml</artifactId>
+			<version>2.5.1-1</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>xmldsig</artifactId>
+			<version>1.0</version>
+		</dependency> -->
+
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+   		 	<artifactId>hibernate-core</artifactId>
+    		<version>3.3.2.GA</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.6.11</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>com.github.inspektr</groupId>
+			<artifactId>inspektr-audit</artifactId>
+			<version>1.1.GA</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -36,6 +116,13 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-core</artifactId>
+    		<version>4.0.1.RELEASE</version>
+		</dependency>
+		
 		<!--spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>

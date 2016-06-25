@@ -19,9 +19,8 @@
 
 package com.tianjunwei.org.jasig.cas.services.jmx;
 
-import org.springframework.jmx.export.annotation.ManagedResource;
-
 import com.tianjunwei.org.jasig.cas.services.ServicesManager;
+import org.springframework.jmx.export.annotation.ManagedResource;
 
 /**
  * Supports the basic {@link org.jasig.cas.services.ServicesManager}.

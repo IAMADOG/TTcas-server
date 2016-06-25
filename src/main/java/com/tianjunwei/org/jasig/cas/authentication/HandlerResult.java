@@ -22,13 +22,12 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
-
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import com.tianjunwei.org.jasig.cas.Message;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 
 /**
  * Contains information about a successful authentication produced by an {@link AuthenticationHandler}.
@@ -68,7 +67,7 @@ public class HandlerResult implements Serializable {
 
     public HandlerResult(
             final AuthenticationHandler source, final CredentialMetaData metaData, final List<Message> warnings) {
-        this(source, metaData, null, warnings);
+        this(source, metaData, null, null);
     }
 
     public HandlerResult(

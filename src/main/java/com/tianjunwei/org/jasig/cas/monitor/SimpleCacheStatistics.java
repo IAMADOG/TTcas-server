@@ -21,7 +21,7 @@ package com.tianjunwei.org.jasig.cas.monitor;
 
 import java.util.Formatter;
 
-import sun.misc.IOUtils;
+import org.apache.commons.io.IOUtils;
 
 /**
  * Simple implementation of cache statistics.

@@ -22,11 +22,10 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.springframework.util.Assert;
-
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import com.tianjunwei.org.jasig.cas.authentication.Authentication;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import org.springframework.util.Assert;
 
 /**
  * An immutable, serializable ticket validation assertion.

@@ -24,12 +24,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.util.Assert;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Lob;
+import javax.persistence.Table;
 
 import com.tianjunwei.org.jasig.cas.authentication.Authentication;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.Assert;
 
 /**
  * Concrete implementation of a TicketGrantingTicket. A TicketGrantingTicket is

@@ -24,9 +24,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.util.Assert;
-
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
+import org.springframework.util.Assert;
 
 /**
  * Constructs immutable {@link Authentication} objects using the builder pattern.

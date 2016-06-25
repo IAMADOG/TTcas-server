@@ -19,20 +19,35 @@
 
 package com.tianjunwei.org.jasig.cas.services;
 
-import java.beans.Transient;
+import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.builder.CompareToBuilder;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+import org.hibernate.annotations.IndexColumn;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.lang3.builder.CompareToBuilder;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
-import com.sun.xml.internal.ws.util.StringUtils;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.JoinTable;
+import javax.persistence.JoinColumn;
+import javax.persistence.Column;
+import javax.persistence.FetchType;
+import javax.persistence.Transient;
 
 /**
  * Base class for mutable, persistable registered services.

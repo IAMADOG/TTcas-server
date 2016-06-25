@@ -20,18 +20,17 @@ package com.tianjunwei.org.jasig.cas.authentication.handler.support;
 
 import java.security.GeneralSecurityException;
 
-import javax.security.auth.login.FailedLoginException;
-import javax.validation.constraints.NotNull;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.tianjunwei.org.jasig.cas.authentication.AbstractAuthenticationHandler;
 import com.tianjunwei.org.jasig.cas.authentication.Credential;
 import com.tianjunwei.org.jasig.cas.authentication.HandlerResult;
 import com.tianjunwei.org.jasig.cas.authentication.HttpBasedServiceCredential;
 import com.tianjunwei.org.jasig.cas.authentication.principal.SimplePrincipal;
 import com.tianjunwei.org.jasig.cas.util.HttpClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.security.auth.login.FailedLoginException;
+import javax.validation.constraints.NotNull;
 
 /**
  * Class to validate the credential presented by communicating with the web

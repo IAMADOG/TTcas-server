@@ -20,10 +20,9 @@ package com.tianjunwei.org.jasig.cas.web.support;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.tianjunwei.org.jasig.cas.authentication.principal.WebApplicationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.tianjunwei.org.jasig.cas.authentication.principal.WebApplicationService;
 
 /**
  * Abstract class for handling argument extraction.

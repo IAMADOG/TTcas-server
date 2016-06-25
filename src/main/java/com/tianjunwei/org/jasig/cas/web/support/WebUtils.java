@@ -23,8 +23,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.jasig.cas.authentication.principal.WebApplicationService;
-import org.jasig.cas.logout.LogoutRequest;
+import com.tianjunwei.org.jasig.cas.authentication.principal.WebApplicationService;
+import com.tianjunwei.org.jasig.cas.logout.LogoutRequest;
 import org.springframework.util.Assert;
 import org.springframework.webflow.context.servlet.ServletExternalContext;
 import org.springframework.webflow.execution.RequestContext;

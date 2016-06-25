@@ -26,8 +26,6 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.util.Assert;
-
 import com.tianjunwei.org.jasig.cas.CentralAuthenticationService;
 import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
 import com.tianjunwei.org.jasig.cas.authentication.Credential;
@@ -35,6 +33,7 @@ import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
 import com.tianjunwei.org.jasig.cas.logout.LogoutRequest;
 import com.tianjunwei.org.jasig.cas.ticket.TicketException;
 import com.tianjunwei.org.jasig.cas.validation.Assertion;
+import org.springframework.util.Assert;
 
 /**
  * Wrapper implementation around a CentralAuthenticationService that does

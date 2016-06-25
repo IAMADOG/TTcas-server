@@ -22,12 +22,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.validation.constraints.NotNull;
-
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import com.tianjunwei.org.jasig.services.persondir.IPersonAttributeDao;
+import com.tianjunwei.org.jasig.services.persondir.IPersonAttributes;
+import com.tianjunwei.org.jasig.services.persondir.support.StubPersonAttributeDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tianjunwei.org.jasig.cas.authentication.Credential;
+import javax.validation.constraints.NotNull;
 
 /**
  * Resolves principals by querying a data source using the Jasig

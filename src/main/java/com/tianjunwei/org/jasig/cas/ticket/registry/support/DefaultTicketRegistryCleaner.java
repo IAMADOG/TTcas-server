@@ -22,16 +22,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import javax.validation.constraints.NotNull;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.tianjunwei.org.jasig.cas.logout.LogoutManager;
 import com.tianjunwei.org.jasig.cas.ticket.Ticket;
 import com.tianjunwei.org.jasig.cas.ticket.TicketGrantingTicket;
 import com.tianjunwei.org.jasig.cas.ticket.registry.RegistryCleaner;
 import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * The default ticket registry cleaner scans the entire CAS ticket registry

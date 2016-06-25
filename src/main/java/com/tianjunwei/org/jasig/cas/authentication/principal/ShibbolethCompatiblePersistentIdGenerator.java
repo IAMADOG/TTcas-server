@@ -20,7 +20,8 @@ package com.tianjunwei.org.jasig.cas.authentication.principal;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
+
+import org.apache.commons.codec.binary.Base64;
 
 import javax.validation.constraints.NotNull;
 

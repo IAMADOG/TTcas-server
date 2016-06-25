@@ -21,15 +21,10 @@ package com.tianjunwei.org.jasig.cas;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-
 import javax.validation.constraints.NotNull;
 
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.Assert;
-
+import com.github.inspektr.audit.annotation.Audit;
+import org.apache.commons.lang.StringUtils;
 import com.tianjunwei.org.jasig.cas.authentication.AcceptAnyAuthenticationPolicyFactory;
 import com.tianjunwei.org.jasig.cas.authentication.Authentication;
 import com.tianjunwei.org.jasig.cas.authentication.AuthenticationBuilder;
@@ -37,8 +32,8 @@ import com.tianjunwei.org.jasig.cas.authentication.AuthenticationException;
 import com.tianjunwei.org.jasig.cas.authentication.AuthenticationManager;
 import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicy;
 import com.tianjunwei.org.jasig.cas.authentication.ContextualAuthenticationPolicyFactory;
-import com.tianjunwei.org.jasig.cas.authentication.Credential;
 import com.tianjunwei.org.jasig.cas.authentication.MixedPrincipalException;
+import com.tianjunwei.org.jasig.cas.authentication.Credential;
 import com.tianjunwei.org.jasig.cas.authentication.principal.PersistentIdGenerator;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Principal;
 import com.tianjunwei.org.jasig.cas.authentication.principal.Service;
@@ -66,6 +61,11 @@ import com.tianjunwei.org.jasig.cas.ticket.registry.TicketRegistry;
 import com.tianjunwei.org.jasig.cas.util.UniqueTicketIdGenerator;
 import com.tianjunwei.org.jasig.cas.validation.Assertion;
 import com.tianjunwei.org.jasig.cas.validation.ImmutableAssertion;
+import org.perf4j.aop.Profiled;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
 /**
  * Concrete implementation of a CentralAuthenticationService, and also the
