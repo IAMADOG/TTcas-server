@@ -8,7 +8,7 @@
 	<name>TTcas-server</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.2.4.RELEASE</spring.version>
+		<spring.version>3.2.6.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 	</properties>
 	<dependencies>
@@ -282,11 +282,11 @@
 		</dependency>
 
 		<!--spring messaging -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-messaging</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<!--spring orm -->
 		<dependency>
@@ -334,11 +334,11 @@
 		</dependency>
 
 		<!--spring websocket -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-websocket</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-redis</artifactId>
