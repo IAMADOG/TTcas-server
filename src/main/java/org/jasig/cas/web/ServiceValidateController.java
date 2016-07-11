@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
 
+import org.apache.commons.lang3.StringUtils;
 import org.jasig.cas.CentralAuthenticationService;
 import org.jasig.cas.authentication.AuthenticationException;
 import org.jasig.cas.authentication.Credential;
@@ -38,7 +39,6 @@ import org.jasig.cas.validation.Assertion;
 import org.jasig.cas.validation.Cas20ProtocolValidationSpecification;
 import org.jasig.cas.validation.ValidationSpecification;
 import org.jasig.cas.web.support.ArgumentExtractor;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -106,7 +106,7 @@ public class ServiceValidateController extends DelegateController {
      */
     protected Credential getServiceCredentialsFromRequest(final HttpServletRequest request) {
         final String pgtUrl = request.getParameter(PARAMETER_PROXY_CALLBACK_URL);
-        if (StringUtils.hasText(pgtUrl)) {
+        if (StringUtils.isNotEmpty(pgtUrl)) {
             try {
                 return new HttpBasedServiceCredential(new URL(pgtUrl));
             } catch (final Exception e) {
