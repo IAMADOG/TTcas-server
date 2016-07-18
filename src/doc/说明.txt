@@ -1,0 +1,3 @@
+\WEB-INF\view\jsp\default\ui\casLoginView.jsp     登录界面
+
+src\main\resoures\defailt_views.properties  配置文件配置了各个登录界面
