@@ -249,12 +249,12 @@
         p:ticketGrantingTicketCookieGenerator-ref="ticketGrantingTicketCookieGenerator"/>
 
   <bean id="gatewayServicesManagementCheck" class="org.jasig.cas.web.flow.GatewayServicesManagementCheck">
-  		<constructor-arg name="servicesManager" ref="servicesManager"></constructor-arg>
+  		<constructor-arg  index="0" ref="servicesManager"></constructor-arg>
   </bean>
     <!-- c:servicesManager-ref="servicesManager" /> -->
 
   <bean id="serviceAuthorizationCheck" class="org.jasig.cas.web.flow.ServiceAuthorizationCheck">
-  		<constructor-arg name="servicesManager" ref="servicesManager"></constructor-arg>
+  		<constructor-arg index="0" ref="servicesManager"></constructor-arg>
   </bean>
     <!-- c:servicesManager-ref="servicesManager" /> -->
 
@@ -267,14 +267,14 @@
         p:messageInterpolator-ref="messageInterpolator"/>
 
   <bean id="ticketGrantingTicketCheckAction" class="org.jasig.cas.web.flow.TicketGrantingTicketCheckAction">
-  	<constructor-arg name="registry" ref="ticketRegistry"></constructor-arg>
+  	<constructor-arg index="0" ref="ticketRegistry"></constructor-arg>
   </bean>
        <!--  c:registry-ref="ticketRegistry" /> -->
 
   <bean id="terminateSessionAction" class="org.jasig.cas.web.flow.TerminateSessionAction">
-  		<constructor-arg name="cas" ref="centralAuthenticationService"></constructor-arg>
-  		<constructor-arg name="tgtCookieGenerator" ref="ticketGrantingTicketCookieGenerator"></constructor-arg>
-  		<constructor-arg name="warnCookieGenerator" ref="warnCookieGenerator"></constructor-arg>
+  		<constructor-arg  ref="centralAuthenticationService"></constructor-arg>
+  		<constructor-arg  ref="ticketGrantingTicketCookieGenerator"></constructor-arg>
+  		<constructor-arg  ref="warnCookieGenerator"></constructor-arg>
   </bean>
        <!--  c:cas-ref="centralAuthenticationService"
         c:tgtCookieGenerator-ref="ticketGrantingTicketCookieGenerator"
