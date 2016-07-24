@@ -32,17 +32,26 @@
     </description>
        
 	<!-- ID Generators -->
-	<bean id="ticketGrantingTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator"
-        c:maxLength="50" c:suffix="${host.name}" />
+	<bean id="ticketGrantingTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator">
+		<constructor-arg index="0" value="50"></constructor-arg>
+		<constructor-arg index="1" value="${host.name}"></constructor-arg>
+	</bean>
+       <!--  c:maxLength="50" c:suffix="${host.name}" /> -->
 
-	<bean id="serviceTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator"
-        c:maxLength="20" c:suffix="${host.name}" />
+	<bean id="serviceTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator">
+       	<constructor-arg index="0" value="20"></constructor-arg>
+		<constructor-arg index="1" value="${host.name}"></constructor-arg>
+	</bean>
 
-    <bean id="loginTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator"
-        c:maxLength="30" c:suffix="${host.name}" />
+    <bean id="loginTicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator">
+    	<constructor-arg index="0" value="30"></constructor-arg>
+		<constructor-arg index="1" value="${host.name}"></constructor-arg>
+    </bean>
     	
-    <bean id="proxy20TicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator"
-        c:maxLength="20" c:suffix="${host.name}" />
+    <bean id="proxy20TicketUniqueIdGenerator" class="org.jasig.cas.util.DefaultUniqueTicketIdGenerator">
+    	<constructor-arg index="0" value="30"></constructor-arg>
+		<constructor-arg index="1" value="${host.name}"></constructor-arg>
+    </bean>
 	 
 	<util:map id="uniqueIdGeneratorsMap">
 		<entry
