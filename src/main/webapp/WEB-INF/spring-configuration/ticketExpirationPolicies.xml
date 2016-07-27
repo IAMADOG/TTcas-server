@@ -31,7 +31,7 @@
 	<bean id="serviceTicketExpirationPolicy"
 		class="org.jasig.cas.ticket.support.MultiTimeUseOrTimeoutExpirationPolicy">
 		<constructor-arg index="0" value="1" />
-		<constructor-arg index="1" value="${st.timeToKillInSeconds:10}" />
+		<constructor-arg index="1" value="${st.timeToKillInSeconds:1000}" />
 		<constructor-arg index="2" value="SECONDS" />
 	</bean>
 
