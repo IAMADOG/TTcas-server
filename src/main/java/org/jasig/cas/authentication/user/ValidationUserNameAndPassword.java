@@ -7,10 +7,16 @@ import org.jasig.cas.authentication.PreventedException;
 import org.jasig.cas.authentication.UsernamePasswordCredential;
 import org.jasig.cas.authentication.handler.support.AbstractUsernamePasswordAuthenticationHandler;
 import org.jasig.cas.authentication.principal.SimplePrincipal;
+import org.jasig.cas.authentication.user.entity.User;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class ValidationUserNameAndPassword extends AbstractUsernamePasswordAuthenticationHandler {
 
+	@Autowired(required = true)
+	SqlSessionTemplate sqlSessionTemplate;
 	
+	String statement = User.class.getName()+".";
 
 	  /** {@inheritDoc} */
     @Override
@@ -20,12 +26,22 @@ public class ValidationUserNameAndPassword extends AbstractUsernamePasswordAuthe
         final String username = credential.getUsername();
         final String password = credential.getPassword();
         
-        if("admin".equals(username) && "admin".equals(password)){
+        User user = new User();
+        user.setName(username);
+        user.setPassword(password);
+        
+       User  user2 = sqlSessionTemplate.selectOne(statement+"get", user);
+        
+        if(user2 != null){
         	return createHandlerResult(credential, new SimplePrincipal(username), null);
         }
         else{
         	return null;
         }
         
+    }
+    
+    public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate){
+    	this.sqlSessionTemplate = sqlSessionTemplate;
     }
 }
