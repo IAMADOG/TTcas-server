@@ -44,7 +44,7 @@
 <body id="cas">
   <div id="container">
       <header>
-        <a id="logo" href="http://www.jasig.org" title="<spring:message code="logo.title" />">Jasig</a>
-        <h1>Central Authentication Service (CAS)</h1>
+        <a id="logo" href="http://www.jasig.org" title="<spring:message code="logo.title" />">登录中心</a>
+        <h1><spring:message code="central.name" /></h1>
       </header>
       <div id="content">

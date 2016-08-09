@@ -1,3 +1,7 @@
 \WEB-INF\view\jsp\default\ui\casLoginView.jsp     登录界面
 
 src\main\resoures\defailt_views.properties  配置文件配置了各个登录界面
+
+
+
+https://localhost:8443/cas/login/serviceValidate?ticket=ST-2-oygdzA9oQoQVrFURGbkQ-cas01.example.org&service=http%3A%2F%2Flocalhost%3A8090%2Fproduct%2Finput.action%3Bjsessionid%3Do7zysu3tkax817xr6vuc2lxok

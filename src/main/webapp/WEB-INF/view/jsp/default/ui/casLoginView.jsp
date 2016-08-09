@@ -76,16 +76,6 @@
   </form:form>
 </div>
   
-<div id="sidebar">
-  <div class="sidebar-content">
-    <p><spring:message code="screen.welcome.security" /></p>
-    
-    <div id="list-languages">
-      <%final String queryString = request.getQueryString() == null ? "" : request.getQueryString().replaceAll("&locale=([A-Za-z][A-Za-z]_)?[A-Za-z][A-Za-z]|^locale=([A-Za-z][A-Za-z]_)?[A-Za-z][A-Za-z]", "");%>
-      <c:set var='query' value='<%=queryString%>' />
-      <c:set var="xquery" value="${fn:escapeXml(query)}" />
-    </div>
-  </div>
-</div>
+
 
 <jsp:directive.include file="includes/bottom.jsp" />
