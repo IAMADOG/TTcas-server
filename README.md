@@ -1,0 +1,6 @@
+# TTcas-server
+单点登录服务端
+
+
+1、现在实现了从数据库登录，继承AbstractUsernamePasswordAuthenticationHandler实现ValidationUserNameAndPassword子类使用数据库进行登录，
+相应的xml配置文件中的类注入也做了相应的修改。
