@@ -32,7 +32,9 @@ public class ValidationUserNameAndPassword extends AbstractUsernamePasswordAuthe
         
        User  user2 = sqlSessionTemplate.selectOne(statement+"get", user);
         
+       
         if(user2 != null){
+        	credential.setUserId(user2.getId());
         	return createHandlerResult(credential, new SimplePrincipal(username), null);
         }
         else{

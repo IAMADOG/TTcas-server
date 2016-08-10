@@ -46,8 +46,40 @@ public class UsernamePasswordCredential implements Credential, Serializable {
     @NotNull
     @Size(min=1, message = "required.password")
     private String password;
+    
+    
+    private int userId;
+    
+    private String email;
+    
+    private String tgt;
+    
 
-    /** Default constructor. */
+    public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTgt() {
+		return tgt;
+	}
+
+	public void setTgt(String tgt) {
+		this.tgt = tgt;
+	}
+
+	/** Default constructor. */
     public UsernamePasswordCredential() {}
 
     /**

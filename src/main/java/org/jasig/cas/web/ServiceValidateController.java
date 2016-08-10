@@ -153,7 +153,7 @@ public class ServiceValidateController extends DelegateController {
             }
 
             final Assertion assertion = this.centralAuthenticationService.validateServiceTicket(serviceTicketId, service);
-
+            
             final ValidationSpecification validationSpecification = this.getCommandClass();
             final ServletRequestDataBinder binder = new ServletRequestDataBinder(validationSpecification, "validationSpecification");
             initBinder(request, binder);
