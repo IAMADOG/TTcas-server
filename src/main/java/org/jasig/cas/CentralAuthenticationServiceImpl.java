@@ -18,6 +18,7 @@
  */
 package org.jasig.cas;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -433,6 +434,8 @@ public final class CentralAuthenticationServiceImpl implements CentralAuthentica
             }
 
             final TicketGrantingTicket root = serviceTicket.getGrantingTicket().getRoot();
+            final int authenticationChainSize = serviceTicket
+                    .getGrantingTicket().getChainedAuthentications().size();
             final Authentication authentication = getAuthenticationSatisfiedByPolicy(
                     root, new ServiceContext(serviceTicket.getService(), registeredService));
             final Principal principal = authentication.getPrincipal();
@@ -448,12 +451,20 @@ public final class CentralAuthenticationServiceImpl implements CentralAuthentica
             final Principal modifiedPrincipal = new SimplePrincipal(principalId, attributesToRelease);
             final AuthenticationBuilder builder = AuthenticationBuilder.newInstance(authentication);
             builder.setPrincipal(modifiedPrincipal);
-
+            final Authentication authToUse;
+            final List<Authentication> authentications = new ArrayList<Authentication>();
+            
+            for (int i = 0; i < authenticationChainSize - 1; i++) {
+                authentications.add(serviceTicket.getGrantingTicket().getChainedAuthentications().get(i));
+            }
+            authentications.add(authentication);
+            
+            
             return new ImmutableAssertion(
                     builder.build(),
                     serviceTicket.getGrantingTicket().getChainedAuthentications(),
                     serviceTicket.getService(),
-                    serviceTicket.isFromNewLogin());
+                    serviceTicket.isFromNewLogin(),serviceTicket.getGrantingTicket().getRoot().getId());
         } finally {
             if (serviceTicket.isExpired()) {
                 this.serviceTicketRegistry.deleteTicket(serviceTicketId);

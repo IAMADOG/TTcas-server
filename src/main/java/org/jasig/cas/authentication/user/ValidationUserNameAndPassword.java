@@ -11,6 +11,8 @@ import org.jasig.cas.authentication.user.entity.User;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.alibaba.fastjson.JSON;
+
 public class ValidationUserNameAndPassword extends AbstractUsernamePasswordAuthenticationHandler {
 
 	@Autowired(required = true)
@@ -32,10 +34,10 @@ public class ValidationUserNameAndPassword extends AbstractUsernamePasswordAuthe
         
        User  user2 = sqlSessionTemplate.selectOne(statement+"get", user);
         
+       String info = JSON.toJSONString(user2);
        
         if(user2 != null){
-        	credential.setUserId(user2.getId());
-        	return createHandlerResult(credential, new SimplePrincipal(username), null);
+        	return createHandlerResult(credential, new SimplePrincipal(info), null);
         }
         else{
         	return null;

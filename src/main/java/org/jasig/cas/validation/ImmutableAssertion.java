@@ -51,6 +51,8 @@ public final class ImmutableAssertion implements Assertion, Serializable {
 
     /** The service we are asserting this ticket for. */
     private final Service service;
+    
+    private final String tgt;
 
     /**
      * Creates a new instance with required parameters.
@@ -66,7 +68,7 @@ public final class ImmutableAssertion implements Assertion, Serializable {
             final Authentication primary,
             final List<Authentication> chained,
             final Service service,
-            final boolean fromNewLogin) {
+            final boolean fromNewLogin,String tgt) {
 
         Assert.notNull(primary, "primary authentication cannot be null");
         Assert.notNull(chained, "chained authentications cannot be null");
@@ -77,8 +79,13 @@ public final class ImmutableAssertion implements Assertion, Serializable {
         this.chainedAuthentications = chained;
         this.service = service;
         this.fromNewLogin = fromNewLogin;
+        this.tgt = tgt;
     }
-
+    
+    public String getTgt(){
+    	return tgt;
+    }
+    
     public Authentication getPrimaryAuthentication() {
         return this.primaryAuthentication;
     }

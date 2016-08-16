@@ -65,5 +65,7 @@ public interface Assertion {
      * @return the service for which we are asserting this ticket is valid for.
      */
     Service getService();
+    
+    String getTgt();
 
 }
