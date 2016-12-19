@@ -20,13 +20,19 @@ import org.jasig.cas.authentication.AuthenticationException;
 import org.jasig.cas.authentication.Credential;
 import org.jasig.cas.authentication.UsernamePasswordCredential;
 import org.jasig.cas.ticket.TicketException;
+import org.jasig.cas.validation.Assertion;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.alibaba.druid.sql.dialect.oracle.ast.clause.ModelClause.ReturnRowsClause;
+
+import org.jasig.cas.authentication.principal.Service;
+import org.jasig.cas.authentication.principal.SimpleWebApplicationServiceImpl;
 
 /**
  * @author tianjunwei
  * @time 2016 上午11:03:17
  */
-public class CasOpenApiImpl {
+public class CasOpenApiImpl implements CasOpenApi {
 	
 	@Autowired
 	CentralAuthenticationService centralAuthenticationService;
@@ -47,6 +53,40 @@ public class CasOpenApiImpl {
 		centralAuthenticationService.destroyTicketGrantingTicket(tgt);
 		
 		return tgt;
+	}
+
+
+	@Override
+	public String applyST(String tgt,String serviceUrl) {
+		Service service = new SimpleWebApplicationServiceImpl(serviceUrl);
+		String st=null;
+		try {
+			st = centralAuthenticationService.grantServiceTicket(tgt, service);
+		} catch (TicketException e) {
+			e.printStackTrace();
+		}
+		return st;
+	}
+
+	@Override
+	public String verifyST(String st,String serviceUrl) {
+		Service service = new SimpleWebApplicationServiceImpl(serviceUrl);
+		String token=null;
+		try {
+			token = centralAuthenticationService.grantServiceTicket(st, service);
+		} catch (TicketException e) {
+			e.printStackTrace();
+			
+		}
+		Assertion result = null;
+		
+		try {
+			result = centralAuthenticationService.validateServiceTicket(token, service);
+		} catch (TicketException e) {
+			e.printStackTrace();
+		}
+		
+		return result.getChainedAuthentications().get(0).getPrincipal().getId();
 	}
 	
 	

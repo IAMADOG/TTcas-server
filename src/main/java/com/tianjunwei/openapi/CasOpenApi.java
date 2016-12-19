@@ -22,4 +22,6 @@ package com.tianjunwei.openapi;
 public interface CasOpenApi {
 	public String applyTGT(String userName,String passWord);
 	public String destoryTGT(String tgt);
+	public String applyST(String tgt,String service);
+	public String verifyST(String st,String service);
 }
